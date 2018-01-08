@@ -31,7 +31,7 @@ This work is primarily based on configurations observed in the following reposit
 * https://github.com/herrbischoff/awesome-osx-command-line
 
 ## License
-This Ansible role is distributed under the MIT License.  See the LICENSE file for more details.
+This collection of scripts is distributed under the MIT License.  See the LICENSE file for more details.
 
 ## Donations
 Donations are very welcome, and can be made to the following addresses:
