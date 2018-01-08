@@ -1,6 +1,16 @@
 # bootstrap-macos
 This repo contains a list of shell scripts that I use to bootstrap a fresh installation of macOS with my software dependencies and OS configuration/preferences.  A side-goal is to keep it up-to-date as far as possible, as changes are made and additional software is installed after the fact.
 
+## Scripts
+* `macos.sh`: Set various macOS preferences (each operation performed is explained with a comment for reference).
+* `brew.sh`: Install Homebrew and various packages.
+* `cask.sh`: Install various GUI applications via Homebrew Cask.
+* `mas.sh`: Install various applications from the Mac App Store.
+* `pip.sh`: Install various Python-based dependencies.
+* `npm.sh`: Install various Node-based dependencies.
+* `gem.sh`: Install various Ruby-based dependencies.
+* `fish.sh`: Install the Fish shell, and Powerline fonts collection.
+
 ## Usage
 The recommended execution order is as follows:
 1. `$ ./macos.sh`
