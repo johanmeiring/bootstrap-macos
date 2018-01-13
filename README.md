@@ -10,6 +10,7 @@ This repo contains a list of shell scripts that I use to bootstrap a fresh insta
 * `npm.sh`: Install various Node-based dependencies.
 * `gem.sh`: Install various Ruby-based dependencies.
 * `fish.sh`: Install the Fish shell, and Powerline fonts collection.
+* `dock.sh`: Configures the icons on my Dock using `dockutil`.
 
 ## Usage
 The recommended execution order is as follows:
@@ -22,6 +23,7 @@ The recommended execution order is as follows:
 1. `$ ./npm.sh`
 1. `$ ./gem.sh`
 1. `$ ./fish.sh`
+1. `$ ./dock.sh`
 
 ## Credits
 This work is primarily based on configurations observed in the following repositories:
