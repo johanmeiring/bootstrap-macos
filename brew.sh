@@ -72,6 +72,7 @@ brew install lynx
 brew install macvim
 brew install md5sha1sum
 brew install p7zip
+brew install rclone
 brew install ssh-copy-id
 brew install speedtest-cli
 brew install tree
