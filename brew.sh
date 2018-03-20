@@ -66,6 +66,7 @@ brew install git
 brew install git-lfs
 #brew install htop # Doesn't compile on macOS newer than Sierra
 brew install imagemagick --with-webp
+brew install imagesnap
 brew install ispell
 brew install jq
 brew install lynx
@@ -114,6 +115,7 @@ brew install dep
 # Install Node.
 brew install node@8
 brew install node
+brew install yarn
 
 # Install media tools.
 brew install ffmpeg
@@ -139,5 +141,3 @@ brew install ponysay
 
 # Remove outdated versions from the cellar.
 # brew cleanup
-
-
