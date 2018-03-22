@@ -102,7 +102,7 @@ brew install ec2-api-tools
 
 # Install PHP (specifically for minimal CakePHP development).
 brew tap homebrew/php
-brew install php71
+brew install php71 --with-phpdbg
 brew install php71-intl
 brew install php71-xdebug
 brew install composer
