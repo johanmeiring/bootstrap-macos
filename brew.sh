@@ -15,6 +15,9 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Install Mac App Store command line interface
+brew install mas
+
 # Enable Homebrew-Cask
 brew tap caskroom/cask
 
@@ -37,9 +40,6 @@ brew install wget --with-iri
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
-
-# Install Mac App Store command line interface
-brew install mas
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
