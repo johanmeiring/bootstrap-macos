@@ -101,10 +101,8 @@ brew install aws-elasticbeanstalk
 brew install ec2-api-tools
 
 # Install PHP (specifically for minimal CakePHP development).
-brew tap homebrew/php
-brew install php71 --with-phpdbg
-brew install php71-intl
-brew install php71-xdebug
+brew install php@7.1
+brew link php@7.1 --force --overwrite
 brew install composer
 
 # Install Go and related tools.
