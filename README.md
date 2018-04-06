@@ -32,10 +32,11 @@ The recommended execution order is as follows:
 ## Credits
 
 This work is primarily based on configurations observed in the following repositories:
-* https://github.com/geerlingguy/dotfiles
-* https://github.com/mathiasbynens/dotfiles
-* https://github.com/joeyhoer/starter/
-* https://github.com/herrbischoff/awesome-osx-command-line
+
+* [https://github.com/geerlingguy/dotfiles](https://github.com/geerlingguy/dotfiles)
+* [https://github.com/mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
+* [https://github.com/joeyhoer/starter/](https://github.com/joeyhoer/starter/)
+* [https://github.com/herrbischoff/awesome-osx-command-line](https://github.com/herrbischoff/awesome-osx-command-line)
 
 ## License
 
@@ -44,5 +45,6 @@ This collection of scripts is distributed under the MIT License.  See the LICENS
 ## Donations
 
 Donations are very welcome, and can be made to the following addresses:
+
 * BTC: 1AWHJcUBha35FnuuWat9urRW2FNc4ftztv
 * ETH: 0xAF1Aac4c40446F4C46e55614F14d9b32d712ECBc
