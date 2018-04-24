@@ -134,6 +134,7 @@ brew cask install vagrant
 #brew install cowsay
 brew install emojify
 brew install fortune
+brew install jrnl
 brew install lolcat
 brew install ponysay
 
