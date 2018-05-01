@@ -22,6 +22,7 @@ brew cask install google-backup-and-sync
 brew cask install istat-menus
 brew cask install iterm2
 brew cask install libreoffice
+brew cask install macdown
 brew cask install microsoft-office
 brew cask install musicbrainz-picard
 brew cask install ngrok
