@@ -12,4 +12,11 @@ command -v fish > /dev/null || \
 # Install Powerline fonts
 git clone https://github.com/powerline/fonts.git /tmp/powerline && /tmp/powerline/install.sh
 
+# Install fish plugins
+omf install aws # https://github.com/oh-my-fish/plugin-aws
+omf install brew # https://github.com/oh-my-fish/plugin-brew
+# omf install fonts
+omf install osx # https://github.com/oh-my-fish/plugin-osx
+omf install bobthefish
+
 exit 0
