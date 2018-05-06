@@ -15,8 +15,12 @@ git clone https://github.com/powerline/fonts.git /tmp/powerline && /tmp/powerlin
 # Install fish plugins
 omf install aws # https://github.com/oh-my-fish/plugin-aws
 omf install brew # https://github.com/oh-my-fish/plugin-brew
-# omf install fonts
+omf install fonts
+omf install fzf # https://github.com/fishgretel/pkg-fzf
 omf install osx # https://github.com/oh-my-fish/plugin-osx
-omf install bobthefish
+omf install z # https://github.com/oh-my-fish/plugin-z
+#omf install bobthefish
+omf install https://github.com/johanmeiring/fishy-joe
+omf theme fishy-joe
 
 exit 0
