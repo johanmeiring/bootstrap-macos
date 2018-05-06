@@ -62,6 +62,7 @@ brew install ack
 brew install bash-completion
 brew install checkbashisms
 brew install dockutil
+brew install fzf
 brew install git
 brew install git-lfs
 #brew install htop # Doesn't compile on macOS newer than Sierra
