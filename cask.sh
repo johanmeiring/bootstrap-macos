@@ -21,6 +21,7 @@ brew cask install google-chrome
 brew cask install google-backup-and-sync
 brew cask install istat-menus
 brew cask install iterm2
+brew cask install keybase
 brew cask install libreoffice
 brew cask install macdown
 brew cask install microsoft-office
