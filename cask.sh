@@ -13,6 +13,7 @@ brew cask install adobe-acrobat-reader
 #brew cask install avast-security
 brew cask install caffeine
 brew cask install cleanmymac
+brew cask install discord
 brew cask install docker
 brew cask install dropbox
 brew cask install filezilla
