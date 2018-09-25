@@ -73,6 +73,7 @@ brew install jq
 brew install lynx
 brew install macvim
 brew install md5sha1sum
+brew install mdv # markdown viewer
 brew install p7zip
 brew install rclone
 brew install sass/sass/sass
