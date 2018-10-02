@@ -109,6 +109,7 @@ brew link php@7.1 --force --overwrite
 brew install composer
 pecl install xdebug
 cp /usr/local/lib/php/pecl/20160303/xdebug.so /usr/local/lib/php/20160303/.
+composer config -g repos.packagist composer https://packagist.co.za
 
 # Install Go and related tools.
 brew install go
