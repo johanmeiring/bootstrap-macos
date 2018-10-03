@@ -155,7 +155,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Disable press-and-hold for keys in favor of key repeat
-#defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 2
@@ -509,14 +509,6 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 
 # Hide the app in the background if it’s not the front-most window
 defaults write com.twitter.twitter-mac HideInBackground -bool true
-
-
-###############################################################################
-# Visual Studio Code                                                          #
-###############################################################################
-
-# Fix VSCodeVim Key Repeat
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 
 ###############################################################################
