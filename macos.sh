@@ -91,7 +91,7 @@ sudo systemsetup -setrestartfreeze on
 
 # Hide and show certain menubar icons
 defaults -currentHost write dontAutoLoad -array \
-    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" 
+    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu"
 #    "/System/Library/CoreServices/Menu Extras/User.menu"
 defaults write com.apple.systemuiserver menuExtras -array \
     "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
@@ -104,7 +104,7 @@ defaults write com.apple.systemuiserver menuExtras -array \
 
 
 ###############################################################################
-# Users & Groups                                                              # 
+# Users & Groups                                                              #
 ###############################################################################
 
 # Display login window as: Name and password
@@ -197,6 +197,10 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Enable subpixel font rendering on non-Apple LCDs
 # Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
+
+# Fix macOS Mojave Font Rendering Issue
+# https://ahmadawais.com/fix-macos-mojave-font-rendering-issue/
+defaults write NSGlobalDomain CGFontRenderingFontSmoothingDisabled -bool FALSE
 
 
 ###############################################################################
@@ -548,4 +552,3 @@ for app in "Dock" \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-
