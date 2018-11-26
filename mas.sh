@@ -2,7 +2,7 @@
 
 command -v mas >/dev/null 2>&1 || brew install mas
 
-mas install 443987910 # 1Password
+# mas install 443987910 # 1Password
 mas install 803453959 # Slack
 mas install 470158793 # Keka
 mas install 823766827 # OneDrive
@@ -15,4 +15,3 @@ mas install 409183694 # Keynote
 mas install 408981434 # iMovie
 mas install 497799835 # Xcode
 sudo xcodebuild -license accept
-

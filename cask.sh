@@ -9,6 +9,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Make sure we're using the latest Homebrew, and that package details are up-to-date.
 brew update
 
+brew cask install 1password
 brew cask install adobe-acrobat-reader
 #brew cask install avast-security
 brew cask install caffeine
