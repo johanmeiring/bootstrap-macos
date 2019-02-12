@@ -8,7 +8,7 @@ dockutil --add "/Applications/Launchpad.app"
 dockutil --add "/Applications/Safari.app"
 dockutil --add "/Applications/Google Chrome.app"
 dockutil --add "/Applications/Visual Studio Code.app"
-dockutil --add "/Applications/PhpStorm.app"
+# dockutil --add "/Applications/PhpStorm.app" # Now managed by JetBrains Toolbox
 dockutil --add "/Applications/Mail.app"
 dockutil --add "/Applications/Messages.app"
 dockutil --add "/Applications/Slack.app"

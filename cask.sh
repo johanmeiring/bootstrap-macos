@@ -30,7 +30,6 @@ brew cask install macdown
 brew cask install microsoft-office
 brew cask install musicbrainz-picard
 brew cask install ngrok
-brew cask install phpstorm
 brew cask install postman
 brew cask install sequel-pro
 brew cask install skype
