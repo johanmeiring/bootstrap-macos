@@ -71,7 +71,6 @@ brew install imagesnap
 brew install ispell
 brew install jq
 brew install lynx
-brew install macvim
 brew install mdv # markdown viewer
 brew install p7zip
 brew install rclone
