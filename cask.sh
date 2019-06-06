@@ -12,6 +12,7 @@ brew update
 brew cask install 1password
 brew cask install adobe-acrobat-reader
 #brew cask install avast-security
+brew cask install brave-browser
 brew cask install caffeine
 brew cask install cleanmymac
 brew cask install discord
