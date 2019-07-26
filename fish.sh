@@ -9,9 +9,6 @@ command -v fish > /dev/null || \
 # Install oh-my-fish (https://github.com/oh-my-fish/oh-my-fish)
 [[ ! -f ~/.config/fish/conf.d/omf.fish ]] && curl -L https://get.oh-my.fish | fish
 
-# Install Powerline fonts
-git clone https://github.com/powerline/fonts.git /tmp/powerline && /tmp/powerline/install.sh
-
 # Install fish plugins
 omf install aws # https://github.com/oh-my-fish/plugin-aws
 omf install brew # https://github.com/oh-my-fish/plugin-brew
