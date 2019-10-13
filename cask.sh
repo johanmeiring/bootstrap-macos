@@ -18,7 +18,6 @@ brew cask install 1password
 brew cask install adobe-acrobat-reader
 #brew cask install avast-security
 brew cask install brave-browser
-brew cask install caffeine
 brew cask install cleanmymac
 brew cask install discord
 brew cask install docker
@@ -30,6 +29,7 @@ brew cask install google-backup-and-sync
 brew cask install istat-menus
 brew cask install iterm2
 brew cask install jetbrains-toolbox
+brew cask install keepingyouawake
 brew cask install keybase
 brew cask install libreoffice
 brew cask install macdown
