@@ -17,6 +17,7 @@ omf install fzf # https://github.com/fishgretel/pkg-fzf
 omf install osx # https://github.com/oh-my-fish/plugin-osx
 omf install z # https://github.com/oh-my-fish/plugin-z
 #omf install bobthefish
+omf install https://github.com/johanmeiring/fish-remove_host
 omf install https://github.com/johanmeiring/fishy-joe
 omf theme fishy-joe
 
