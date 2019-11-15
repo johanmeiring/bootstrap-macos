@@ -77,6 +77,7 @@ brew install rclone
 brew install sass/sass/sass
 brew install ssh-copy-id
 brew install speedtest-cli
+brew install transmission-cli
 brew install tree
 brew install unrar
 
