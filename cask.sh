@@ -26,6 +26,7 @@ brew cask install filezilla
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-backup-and-sync
+brew cask install insomnia
 brew cask install istat-menus
 brew cask install iterm2
 brew cask install jetbrains-toolbox
