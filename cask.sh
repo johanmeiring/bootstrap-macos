@@ -17,6 +17,7 @@ brew cask install font-hack-nerd-font
 brew cask install 1password
 brew cask install adobe-acrobat-reader
 #brew cask install avast-security
+brew cask install balenaetcher
 brew cask install brave-browser
 brew cask install cleanmymac
 brew cask install discord
