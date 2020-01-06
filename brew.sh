@@ -103,12 +103,10 @@ brew install aws-elasticbeanstalk
 brew install ec2-api-tools
 
 # Install PHP and xdebug (specifically for minimal CakePHP development).
-brew install php@7.1
 brew install php@7.2
 brew link php@7.2 --force --overwrite
 brew install composer
 pecl install xdebug
-cp /usr/local/lib/php/pecl/20160303/xdebug.so /usr/local/lib/php/20160303/.
 cp /usr/local/lib/php/pecl/20170718/xdebug.so /usr/local/lib/php/20170718/.
 composer config -g repos.packagist composer https://packagist.co.za
 
