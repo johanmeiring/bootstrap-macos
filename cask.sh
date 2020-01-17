@@ -9,10 +9,11 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Make sure we're using the latest Homebrew, and that package details are up-to-date.
 brew update
 
-# Grab our favourite font first.
+# Grab our favourite fonts first.
 brew tap homebrew/cask-fonts
 brew cask install font-hack
 brew cask install font-hack-nerd-font
+brew cask install font-jetbrains-mono
 
 brew cask install 1password
 brew cask install adobe-acrobat-reader
