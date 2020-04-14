@@ -14,6 +14,7 @@ brew tap homebrew/cask-fonts
 brew cask install font-hack
 brew cask install font-hack-nerd-font
 brew cask install font-jetbrains-mono
+#brew cask install font-jetbrainsmono-nerd-font # Use in case the above breaks.
 
 brew cask install 1password
 brew cask install adobe-acrobat-reader
