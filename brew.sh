@@ -119,7 +119,7 @@ brew install go-delve/delve/delve
 brew install dep
 
 # Install Node.
-brew install node@10
+brew install node@12
 brew install node
 brew install yarn
 
