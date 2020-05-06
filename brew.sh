@@ -105,8 +105,8 @@ brew install ec2-api-tools
 
 # Install PHP and xdebug (specifically for minimal CakePHP development).
 brew install php@7.2
-brew install php # This will currently (2020-01-06) install PHP 7.4
-brew link php --force --overwrite
+brew install php@7.4
+brew link php@7.4 --force --overwrite
 brew install composer
 pecl install xdebug
 cp /usr/local/lib/php/pecl/20170718/xdebug.so /usr/local/lib/php/20170718/.
