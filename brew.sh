@@ -46,8 +46,7 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install screen
 brew install perl
-brew install python
-brew unlink python && brew link python
+brew install python3.8
 brew install ruby
 
 # Install font tools.
