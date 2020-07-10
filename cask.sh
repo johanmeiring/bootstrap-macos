@@ -36,7 +36,6 @@ brew cask install jetbrains-toolbox
 brew cask install keepingyouawake
 brew cask install keybase
 brew cask install libreoffice
-brew cask install macdown
 brew cask install microsoft-edge
 brew cask install microsoft-office
 brew cask install musicbrainz-picard
