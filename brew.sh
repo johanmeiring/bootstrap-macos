@@ -65,7 +65,8 @@ brew install fzf
 brew install github/gh/gh
 brew install git
 brew install git-lfs
-#brew install htop # Doesn't compile on macOS newer than Sierra
+brew install git-delta
+brew install htop
 brew install imagemagick --with-webp
 brew install imagesnap
 brew install ispell
