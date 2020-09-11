@@ -96,6 +96,7 @@ brew install tmux-mem-cpu-load
 # Install Ansible.
 brew install ansible
 brew install ansible-lint
+brew install molecule
 
 # Install AWS tools.
 brew install awscli
