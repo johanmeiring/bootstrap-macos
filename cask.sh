@@ -43,7 +43,7 @@ brew cask install musicbrainz-picard
 brew cask install ngrok
 brew cask install postman
 brew cask install sequel-pro
-brew cask install skype
+brew cask install sonos
 brew cask install telegram
 brew cask install visual-studio-code
 brew cask install vlc
