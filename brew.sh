@@ -123,7 +123,7 @@ brew install dep
 brew install golangci/tap/golangci-lint
 
 # Install Node.
-brew install node@12
+brew install node@14
 brew install node
 brew install yarn
 
