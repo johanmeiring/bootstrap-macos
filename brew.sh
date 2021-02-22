@@ -119,7 +119,6 @@ composer config -g repos.packagist composer https://packagist.co.za
 # Install Go and related tools.
 brew install go
 brew install go-delve/delve/delve
-brew install dep
 brew install golangci/tap/golangci-lint
 
 # Install Node.
