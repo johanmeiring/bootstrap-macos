@@ -125,6 +125,7 @@ brew install golangci/tap/golangci-lint
 brew install node@14
 brew install node
 brew install yarn
+brew install typescript
 
 # Install media tools.
 brew install ffmpeg
