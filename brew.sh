@@ -105,6 +105,7 @@ brew install aws-elasticbeanstalk
 brew install ec2-api-tools
 brew tap aws/tap
 brew install aws-sam-cli
+brew install aws-cdk
 
 # Install PHP and xdebug (specifically for minimal CakePHP development).
 brew install php@7.2
