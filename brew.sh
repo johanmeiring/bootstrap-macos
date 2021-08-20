@@ -59,6 +59,7 @@ brew install woff2
 # Install other useful binaries.
 brew install ack
 brew install bash-completion
+brew install bat
 brew install checkbashisms
 brew install dockutil
 brew install fzf
