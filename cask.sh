@@ -28,7 +28,7 @@ brew cask install dropbox
 brew cask install filezilla
 brew cask install firefox
 brew cask install google-chrome
-brew cask install google-backup-and-sync
+brew cask install google-drive
 brew cask install insomnia
 brew cask install istat-menus
 brew cask install iterm2
