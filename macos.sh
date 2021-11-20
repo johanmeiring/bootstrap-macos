@@ -19,7 +19,7 @@ xcode-select --install 2>/dev/null || echo "Command line tools already installed
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-COMPUTER_NAME="Arthas"
+COMPUTER_NAME="Turalyon"
 sudo scutil --set ComputerName "$COMPUTER_NAME"
 sudo scutil --set HostName "$COMPUTER_NAME"
 sudo scutil --set LocalHostName "$COMPUTER_NAME"
@@ -125,7 +125,7 @@ defaults write NSGlobalDomain RetriesUntilHint -int 0
 ###############################################################################
 
 # Disable hibernation (speeds up entering sleep mode)
-sudo pmset -a hibernatemode 0
+# sudo pmset -a hibernatemode 0
 
 # The commands below no longer work as of High Sierra... leaving it here for future reference
 # https://github.com/mathiasbynens/dotfiles/issues/811
@@ -137,7 +137,7 @@ sudo pmset -a hibernatemode 0
 #sudo chflags uchg /Private/var/vm/sleepimage
 
 # Disable the sudden motion sensor as it’s not useful for SSDs
-sudo pmset -a sms 0
+# sudo pmset -a sms 0
 
 
 ###############################################################################
@@ -155,7 +155,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Disable press-and-hold for keys in favor of key repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 2
@@ -285,13 +285,15 @@ sudo chflags nohidden /Volumes
 ###############################################################################
 
 # Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+# defaults write com.apple.dock tilesize -int 36
+defaults write com.apple.dock tilesize -int 32
 
 # Dock magnification
 defaults write com.apple.dock magnification -bool true
 
 # Icon size of magnified Dock items
-defaults write com.apple.dock largesize -int 64
+# defaults write com.apple.dock largesize -int 64
+defaults write com.apple.dock largesize -int 60
 
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
@@ -483,36 +485,13 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 ###############################################################################
 
 # Disable sensitive and senseless swipe-based navigation
-defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+# defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 
 # Disable the all too sensitive backswipe on Magic Mouse
-defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool false
+# defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool false
 
 # Use the system print dialog
 #defaults write com.google.Chrome DisablePrintPreview -bool true
-
-
-###############################################################################
-# Twitter.app                                                                 #
-###############################################################################
-
-# Disable smart quotes as it’s annoying for code tweets
-defaults write com.twitter.twitter-mac AutomaticQuoteSubstitutionEnabled -bool false
-
-# Show the app window when clicking the menu bar icon
-defaults write com.twitter.twitter-mac MenuItemBehavior -int 1
-
-# Open links in the background
-#defaults write com.twitter.twitter-mac openLinksInBackground -bool true
-
-# Allow closing the ‘new tweet’ window by pressing `Esc`
-defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
-
-# Show full names rather than Twitter handles
-defaults write com.twitter.twitter-mac ShowFullNames -bool true
-
-# Hide the app in the background if it’s not the front-most window
-defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 
 ###############################################################################
@@ -547,8 +526,7 @@ for app in "Dock" \
 	"Finder" \
 	"cfprefsd" \
 	"Mail" \
-	"SystemUIServer" \
-	"Twitter"; do \
+	"SystemUIServer"; do \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
