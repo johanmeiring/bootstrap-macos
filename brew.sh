@@ -145,8 +145,6 @@ brew install youtube-dl
 # Install Hashicorp tools.
 brew install packer
 brew install terraform
-brew install virtualbox # Not Hashicorp, but required for vagrant in my context.
-brew install vagrant
 
 # Install toys.
 #brew install cowsay
