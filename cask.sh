@@ -18,7 +18,6 @@ brew install font-jetbrains-mono
 
 brew install 1password
 brew install adobe-acrobat-reader
-#brew install avast-security
 brew install balenaetcher
 brew install brave-browser
 brew install cleanmymac
@@ -36,18 +35,19 @@ brew install jetbrains-toolbox
 brew install keepingyouawake
 brew install keybase
 brew install libreoffice
-brew install mark-text
 brew install microsoft-edge
 brew install microsoft-office
 brew install musicbrainz-picard
 brew install ngrok
+brew install onedrive
 brew install postman
 brew install sequel-pro
+brew install slack
 brew install sonos
 brew install telegram
+brew install utm
 brew install visual-studio-code
 brew install vlc
 brew install vnc-viewer
 brew install whatsapp
-
-brew install qlmarkdown
+brew install zoom

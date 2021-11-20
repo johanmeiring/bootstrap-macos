@@ -46,7 +46,7 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install screen
 brew install perl
-brew install python3.8
+brew install python3.10
 brew install ruby
 
 # Install font tools.
@@ -63,7 +63,7 @@ brew install bat
 brew install checkbashisms
 brew install dockutil
 brew install fzf
-brew install github/gh/gh
+brew install gh
 brew install git
 brew install git-lfs
 brew install git-delta
@@ -95,10 +95,11 @@ brew install tmux
 brew install tmux-mem-cpu-load
 
 # Install Ansible.
+brew install ansible
 brew install ansible-lint
 brew install molecule
 brew install ansible@2.9
-brew link ansible@2.9 --force --overwrite
+brew link ansible@2.9 --force --overwrite # Might remove this after most projects are migrated to newer versions.
 
 # Install AWS tools.
 brew install awscli
@@ -110,6 +111,7 @@ brew install aws-sam-cli
 brew install aws-cdk
 
 # Install PHP and xdebug (specifically for minimal CakePHP development).
+brew install php # Currently 8.0
 brew install php@7.2
 brew install php@7.4
 brew link php@7.4 --force --overwrite
@@ -117,12 +119,12 @@ brew install composer
 pecl install xdebug
 cp /usr/local/lib/php/pecl/20170718/xdebug.so /usr/local/lib/php/20170718/.
 cp /usr/local/lib/php/pecl/20190902/xdebug.so /usr/local/lib/php/20190902/.
-composer config -g repos.packagist composer https://packagist.co.za
+#composer config -g repos.packagist composer https://packagist.co.za
 
 # Install Go and related tools.
 brew install go
-brew install go-delve/delve/delve
-brew install golangci/tap/golangci-lint
+brew install delve
+brew install golangci-lint
 
 # Install Node.
 brew install node@14
@@ -136,20 +138,20 @@ brew install jasper
 brew install jpegoptim
 brew install lame
 brew install x264
+brew install x265
 brew install xvid
 brew install youtube-dl
 
 # Install Hashicorp tools.
 brew install packer
 brew install terraform
-brew cask install virtualbox # Not Hashicorp, but required for vagrant in my context.
-brew cask install vagrant
+brew install virtualbox # Not Hashicorp, but required for vagrant in my context.
+brew install vagrant
 
 # Install toys.
 #brew install cowsay
 brew install emojify
 brew install fortune
-brew install jrnl
 brew install lolcat
 brew install ponysay
 
