@@ -11,43 +11,43 @@ brew update
 
 # Grab our favourite fonts first.
 brew tap homebrew/cask-fonts
-brew cask install font-hack
-brew cask install font-hack-nerd-font
-brew cask install font-jetbrains-mono
-#brew cask install font-jetbrainsmono-nerd-font # Use in case the above breaks.
+brew install font-hack
+brew install font-hack-nerd-font
+brew install font-jetbrains-mono
+#brew install font-jetbrainsmono-nerd-font # Use in case the above breaks.
 
-brew cask install 1password
-brew cask install adobe-acrobat-reader
-#brew cask install avast-security
-brew cask install balenaetcher
-brew cask install brave-browser
-brew cask install cleanmymac
-brew cask install discord
-brew cask install docker
-brew cask install dropbox
-brew cask install filezilla
-brew cask install firefox
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install insomnia
-brew cask install istat-menus
-brew cask install iterm2
-brew cask install jetbrains-toolbox
-brew cask install keepingyouawake
-brew cask install keybase
-brew cask install libreoffice
-brew cask install mark-text
-brew cask install microsoft-edge
-brew cask install microsoft-office
-brew cask install musicbrainz-picard
-brew cask install ngrok
-brew cask install postman
-brew cask install sequel-pro
-brew cask install sonos
-brew cask install telegram
-brew cask install visual-studio-code
-brew cask install vlc
-brew cask install vnc-viewer
-brew cask install whatsapp
+brew install 1password
+brew install adobe-acrobat-reader
+#brew install avast-security
+brew install balenaetcher
+brew install brave-browser
+brew install cleanmymac
+brew install discord
+brew install docker
+brew install dropbox
+brew install filezilla
+brew install firefox
+brew install google-chrome
+brew install google-drive
+brew install insomnia
+brew install istat-menus
+brew install iterm2
+brew install jetbrains-toolbox
+brew install keepingyouawake
+brew install keybase
+brew install libreoffice
+brew install mark-text
+brew install microsoft-edge
+brew install microsoft-office
+brew install musicbrainz-picard
+brew install ngrok
+brew install postman
+brew install sequel-pro
+brew install sonos
+brew install telegram
+brew install visual-studio-code
+brew install vlc
+brew install vnc-viewer
+brew install whatsapp
 
-brew cask install qlmarkdown
+brew install qlmarkdown
