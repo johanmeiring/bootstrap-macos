@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -7,7 +9,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install Homebrew if it's not installed yet.
-command -v brew 2>/dev/null || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+command -v brew 2>/dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Make sure we're using the latest Homebrew, and that package details are up-to-date.
 brew update
@@ -19,10 +21,10 @@ brew upgrade
 brew install mas
 
 # Enable Homebrew-Cask
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 # Install Java
-brew cask install java
+brew install java
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -33,20 +35,20 @@ brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install screen
 brew install perl
-brew install python3.10
+brew install python@3.10
 brew install ruby
 
 # Install font tools.
@@ -68,7 +70,7 @@ brew install git
 brew install git-lfs
 brew install git-delta
 brew install htop
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install imagesnap
 brew install ispell
 brew install jq
@@ -81,7 +83,6 @@ brew install ssh-copy-id
 brew install speedtest-cli
 brew install transmission-cli
 brew install tree
-brew install unrar
 
 # Install other useful misc libs.
 brew install libevent
@@ -116,9 +117,9 @@ brew install php@7.2
 brew install php@7.4
 brew link php@7.4 --force --overwrite
 brew install composer
-pecl install xdebug
-cp /usr/local/lib/php/pecl/20170718/xdebug.so /usr/local/lib/php/20170718/.
-cp /usr/local/lib/php/pecl/20190902/xdebug.so /usr/local/lib/php/20190902/.
+#pecl install xdebug
+#cp /usr/local/lib/php/pecl/20170718/xdebug.so /usr/local/lib/php/20170718/.
+#cp /usr/local/lib/php/pecl/20190902/xdebug.so /usr/local/lib/php/20190902/.
 #composer config -g repos.packagist composer https://packagist.co.za
 
 # Install Go and related tools.
@@ -128,6 +129,7 @@ brew install golangci-lint
 
 # Install Node.
 brew install node@14
+brew install node@16
 brew install node
 brew install yarn
 brew install typescript

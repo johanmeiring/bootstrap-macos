@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -24,7 +26,6 @@ brew install cleanmymac
 brew install discord
 brew install docker
 brew install dropbox
-brew install filezilla
 brew install firefox
 brew install google-chrome
 brew install google-drive
@@ -39,11 +40,10 @@ brew install microsoft-edge
 brew install microsoft-office
 brew install musicbrainz-picard
 brew install ngrok
-brew install onedrive
 brew install postman
 brew install sequel-pro
 brew install slack
-brew install sonos
+#brew install sonos
 brew install telegram
 brew install utm
 brew install visual-studio-code

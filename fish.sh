@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Install fish and set as user's default shell.
 command -v fish > /dev/null || \
     (brew install fish && \
         echo $(brew --prefix)/bin/fish | sudo tee -a /etc/shells && \
         chsh -s $(brew --prefix)/bin/fish)
 
+# Ensure brew is available in the path.
+set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
+
 # Install oh-my-fish (https://github.com/oh-my-fish/oh-my-fish)
-[[ ! -f ~/.config/fish/conf.d/omf.fish ]] && curl -L https://get.oh-my.fish | fish
+[[ ! -f ~/.config/fish/conf.d/omf.fish ]] && curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
 # Install fish plugins
 omf install aws # https://github.com/oh-my-fish/plugin-aws
