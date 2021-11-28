@@ -485,10 +485,10 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 ###############################################################################
 
 # Disable sensitive and senseless swipe-based navigation
-# defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool true
 
 # Disable the all too sensitive backswipe on Magic Mouse
-# defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool false
+defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool true
 
 # Use the system print dialog
 #defaults write com.google.Chrome DisablePrintPreview -bool true
