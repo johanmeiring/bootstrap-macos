@@ -25,6 +25,7 @@ brew install brave-browser
 brew install cleanmymac
 brew install discord
 brew install docker
+brew install homebrew/cask/docker
 brew install dropbox
 brew install firefox
 brew install google-chrome
@@ -44,6 +45,7 @@ brew install postman
 brew install sequel-pro
 brew install slack
 #brew install sonos
+brew install spotify
 brew install telegram
 brew install utm
 brew install visual-studio-code
