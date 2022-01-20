@@ -77,6 +77,7 @@ brew install jq
 brew install lynx
 brew install mdv # markdown viewer
 brew install p7zip
+brew install qemu
 brew install rclone
 brew install sass/sass/sass
 brew install ssh-copy-id
