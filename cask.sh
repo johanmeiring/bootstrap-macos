@@ -35,7 +35,6 @@ brew install istat-menus
 brew install iterm2
 brew install jetbrains-toolbox
 brew install keepingyouawake
-brew install keybase
 brew install libreoffice
 brew install microsoft-edge
 brew install microsoft-office
