@@ -121,6 +121,7 @@ brew install composer
 brew install go
 brew install delve
 brew install golangci-lint
+brew install mage
 
 # Install Node.
 brew install node@14
