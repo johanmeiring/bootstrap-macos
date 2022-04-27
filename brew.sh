@@ -108,7 +108,6 @@ brew install aws-cdk
 # Install PHP and xdebug (specifically for minimal CakePHP development).
 brew install php # Currently 8.1
 brew install php@8.0
-brew install php@7.2
 brew install php@7.4
 brew link php@7.4 --force --overwrite
 brew install composer
