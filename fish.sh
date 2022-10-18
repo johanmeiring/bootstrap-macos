@@ -9,7 +9,7 @@ command -v fish > /dev/null || \
         chsh -s $(brew --prefix)/bin/fish)
 
 # Ensure brew is available in the path.
-set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
+set -u fish_user_paths /opt/homebrew/bin $fish_user_paths
 
 # Install oh-my-fish (https://github.com/oh-my-fish/oh-my-fish)
 [[ ! -f ~/.config/fish/conf.d/omf.fish ]] && curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish

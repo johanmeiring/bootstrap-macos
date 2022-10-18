@@ -5,13 +5,11 @@ This repo contains a list of shell scripts that I use to bootstrap a fresh insta
 ## Scripts
 
 * `macos.sh`: Set various macOS preferences (each operation performed is explained with a comment for reference).
-* `brew.sh`: Install Homebrew and various packages.
-* `cask.sh`: Install various GUI applications via Homebrew Cask.
-* `mas.sh`: Install various applications from the Mac App Store.
+* `brew.sh`: Install Homebrew and various packages and applications.
 * `pip.sh`: Install various Python-based dependencies.
 * `npm.sh`: Install various Node-based dependencies.
 * `gem.sh`: Install various Ruby-based dependencies.
-* `fish.sh`: Install the Fish shell, and Powerline fonts collection.
+* `fish.sh`: Install and configure the Fish shell.
 * `dock.sh`: Configures the icons on my Dock using `dockutil`.
 
 ## Usage
@@ -19,10 +17,7 @@ This repo contains a list of shell scripts that I use to bootstrap a fresh insta
 The recommended execution order is as follows:
 
 1. `$ ./macos.sh`
-1. In parallel:
-    1. `$ ./brew.sh`
-    1. `$ ./cask.sh`
-    1. `$ ./mas.sh` (start after `mas` has been installed by `brew.sh`)
+1. `$ ./brew.sh`
 1. `$ ./pip.sh`
 1. `$ ./npm.sh`
 1. `$ ./gem.sh`

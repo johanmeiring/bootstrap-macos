@@ -25,41 +25,12 @@ sudo scutil --set HostName "$COMPUTER_NAME"
 sudo scutil --set LocalHostName "$COMPUTER_NAME"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
 
-# Set standby delay to 24 hours (default is 1 hour)
-# You can check current values with `pmset -g`.
-sudo pmset -a standbydelay 86400
-
-# Disable system sleep (helpful if you're usually plugged into mains power).
-sudo systemsetup -setcomputersleep off > /dev/null
-#sudo pmset -a sleep 0
-
-    # Notebook: Battery
-sudo pmset -b         \
-    sleep         15  \
-    disksleep     10  \
-    displaysleep   5  \
-    halfdim        1
-
-# Notebook: Power Adapter
-sudo pmset -c         \
-    sleep          0  \
-    disksleep      0  \
-    displaysleep  30  \
-    halfdim        1  \
-    autorestart    1  \
-    womp           1
-
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-
-# Disable Notification Center
-# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
-# To re-enable, run:
-# launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist && open /System/Library/CoreServices/NotificationCenter.app/
 
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
@@ -108,37 +79,16 @@ defaults write com.apple.systemuiserver menuExtras -array \
 ###############################################################################
 
 # Display login window as: Name and password
-#sudo defaults write /Library/Preferences/com.apple.loginwindow "SHOWFULLNAME" -bool false
+sudo defaults write /Library/Preferences/com.apple.loginwindow "SHOWFULLNAME" -bool false
 
 # Disable automatic login
 sudo defaults delete /Library/Preferences/com.apple.loginwindow autoLoginUser 2>/dev/null
 
-# Allow guests to login to this computer
+# Don't allow guests to login to this computer
 sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
 
 # Show password hints after count (0 to disable)
 defaults write NSGlobalDomain RetriesUntilHint -int 0
-
-
-###############################################################################
-# SSD-specific tweaks                                                         #
-###############################################################################
-
-# Disable hibernation (speeds up entering sleep mode)
-# sudo pmset -a hibernatemode 0
-
-# The commands below no longer work as of High Sierra... leaving it here for future reference
-# https://github.com/mathiasbynens/dotfiles/issues/811
-# Remove the sleep image file to save disk space
-#sudo rm /Private/var/vm/sleepimage
-# Create a zero-byte file instead…
-#sudo touch /Private/var/vm/sleepimage
-# …and make sure it can’t be rewritten
-#sudo chflags uchg /Private/var/vm/sleepimage
-
-# Disable the sudden motion sensor as it’s not useful for SSDs
-# sudo pmset -a sms 0
-
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -196,11 +146,11 @@ defaults write com.apple.screencapture disable-shadow -bool true
 
 # Enable subpixel font rendering on non-Apple LCDs
 # Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
-defaults write NSGlobalDomain AppleFontSmoothing -int 2
+#defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 # Fix macOS Mojave Font Rendering Issue
 # https://ahmadawais.com/fix-macos-mojave-font-rendering-issue/
-defaults write NSGlobalDomain CGFontRenderingFontSmoothingDisabled -bool FALSE
+#defaults write NSGlobalDomain CGFontRenderingFontSmoothingDisabled -bool FALSE
 
 
 ###############################################################################
@@ -284,19 +234,23 @@ sudo chflags nohidden /Volumes
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-# Set the icon size of Dock items to 36 pixels
-# defaults write com.apple.dock tilesize -int 36
+# Set the icon size of Dock items to 32 pixels
 defaults write com.apple.dock tilesize -int 32
 
 # Dock magnification
 defaults write com.apple.dock magnification -bool true
 
 # Icon size of magnified Dock items
-# defaults write com.apple.dock largesize -int 64
 defaults write com.apple.dock largesize -int 60
 
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
 
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
@@ -413,11 +367,6 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-
-# Disable local Time Machine backups (also prolongs life of SSD)
-# Unfortunately this is no longer available as of High Sierra
-# https://forums.developer.apple.com/thread/79297
-#hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 
 ###############################################################################
