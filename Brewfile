@@ -189,6 +189,7 @@ mas "DaisyDisk", id: 411643860 # DaisyDisk
 mas "Tomato One - Free Focus Timer", id: 907364780 # Tomato One - Free Focus Timer
 mas "Keynote", id: 409183694 # Keynote
 mas "iMovie", id: 408981434 # iMovie
+mas "Discovery - DNS-SD Browser", id: 1381004916 # Discovery - DNS-SD Browser 
 # mas "1Password", id: 443987910 # 1Password
 # mas "Slack", id: 803453959 # Slack
 # mas "Navicat Data Modeler Essentials", id: 532423082 # Navicat Data Modeler Essentials
