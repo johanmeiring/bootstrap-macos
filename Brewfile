@@ -91,9 +91,7 @@ brew "aws-sam-cli"
 brew "aws-cdk"
 
 # Install PHP.
-brew "php" # Currently 8.1
-brew "php@8.0"
-brew "php@7.4", link: true, overwrite: true
+brew "php" # Currently 8.2
 brew "composer"
 
 # Install Go and related tools.
