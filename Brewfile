@@ -1,7 +1,3 @@
-#cask_args require_sha: true
-
-tap "homebrew/cask"
-
 # Install Mac App Store command line tools
 brew "mas"
 
@@ -32,7 +28,7 @@ brew "vim"
 brew "grep"
 brew "screen"
 brew "perl"
-brew "python@3.10"
+brew "python@3.12"
 brew "ruby"
 
 # Install font tools.
@@ -49,6 +45,7 @@ brew "bat"
 brew "checkbashisms"
 brew "dockutil"
 brew "esphome"
+brew "fish"
 brew "fzf"
 brew "gh"
 brew "git"
@@ -61,6 +58,7 @@ brew "ispell"
 brew "jq"
 brew "lazygit"
 brew "lynx"
+brew "neovim"
 brew "p7zip"
 brew "qemu"
 brew "rclone"
@@ -91,7 +89,7 @@ brew "aws-sam-cli"
 brew "aws-cdk"
 
 # Install PHP.
-brew "php" # Currently 8.2
+brew "php" # Currently 8.3
 brew "composer"
 
 # Install Go and related tools.
@@ -101,8 +99,6 @@ brew "golangci-lint"
 brew "mage"
 
 # Install Node.
-#brew "node@14"
-#brew "node@16"
 brew "node"
 brew "yarn"
 brew "typescript"
@@ -118,14 +114,20 @@ brew "xvid"
 brew "youtube-dl"
 
 # Install Hashicorp tools.
-brew "packer"
+brew "packer" # Note: this formula is deprecated :/
 brew "terraform"
 
 # Install version managers.
-brew "phpbrew"
-brew "rbenv"
-brew "pyenv"
-brew "nvm"
+brew "asdf"
+# brew "phpbrew"
+# brew "rbenv"
+# brew "pyenv"
+# brew "nvm"
+
+# Install Ansible.
+brew "ansible"
+brew "ansible-lint"
+brew "ansible-language-server"
 
 # Install toys.
 #brew "cowsay"
@@ -162,13 +164,11 @@ cask "istat-menus"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keepingyouawake"
-cask "kindle"
 cask "libreoffice"
 cask "microsoft-edge"
 cask "microsoft-office"
 cask "musicbrainz-picard"
 cask "ngrok"
-cask "obsidian"
 cask "postman"
 cask "slack"
 cask "spotify"
