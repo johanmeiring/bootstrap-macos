@@ -149,6 +149,7 @@ cask "font-mona-sans"
 
 cask "1password"
 cask "adobe-acrobat-reader"
+cask "alacritty"
 cask "balenaetcher"
 cask "battle-net"
 cask "brave-browser"

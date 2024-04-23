@@ -11,7 +11,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install macOS command line tools
-xcode-select --install 2>/dev/null || echo "Command line tools already installed."
+xcode-select --install 2>/dev/null || echo "Command line tools are already installed."
 
 
 ###############################################################################
@@ -58,6 +58,7 @@ defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Restart automatically if the computer freezes
+# Note: This possibly doesn't work anymore. TBC.
 sudo systemsetup -setrestartfreeze on
 
 # Hide and show certain menubar icons
@@ -147,10 +148,6 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Enable subpixel font rendering on non-Apple LCDs
 # Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
 #defaults write NSGlobalDomain AppleFontSmoothing -int 2
-
-# Fix macOS Mojave Font Rendering Issue
-# https://ahmadawais.com/fix-macos-mojave-font-rendering-issue/
-#defaults write NSGlobalDomain CGFontRenderingFontSmoothingDisabled -bool FALSE
 
 
 ###############################################################################

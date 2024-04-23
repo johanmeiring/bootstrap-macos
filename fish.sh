@@ -2,11 +2,13 @@
 
 set -e
 
+BREW_BIN=/opt/homebrew/bin/brew
+
 # Install fish and set as user's default shell.
 command -v fish >/dev/null ||
-	(brew install fish &&
-		echo $(brew --prefix)/bin/fish | sudo tee -a /etc/shells &&
-		chsh -s $(brew --prefix)/bin/fish)
+	($BREW_BIN install fish &&
+		echo $($BREW_BIN --prefix)/bin/fish | sudo tee -a /etc/shells &&
+		chsh -s $($BREW_BIN --prefix)/bin/fish)
 
 # Ensure brew is available in the path.
 set -u fish_user_paths /opt/homebrew/bin $fish_user_paths
