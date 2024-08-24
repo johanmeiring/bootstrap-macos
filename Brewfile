@@ -111,18 +111,14 @@ brew "lame"
 brew "x264"
 brew "x265"
 brew "xvid"
-brew "youtube-dl"
+brew "youtube-dl" # deprecated
 
 # Install Hashicorp tools.
 brew "packer" # Note: this formula is deprecated :/
-brew "terraform"
+brew "terraform" # Note: Same :/
 
 # Install version managers.
 brew "asdf"
-# brew "phpbrew"
-# brew "rbenv"
-# brew "pyenv"
-# brew "nvm"
 
 # Install Ansible.
 brew "ansible"
@@ -156,7 +152,6 @@ cask "brave-browser"
 cask "cleanmymac"
 cask "discord"
 cask "docker"
-cask "homebrew/cask/docker"
 cask "dropbox"
 cask "firefox"
 cask "google-chrome"
@@ -193,8 +188,6 @@ mas "Tomato One - Free Focus Timer", id: 907364780 # Tomato One - Free Focus Tim
 mas "Keynote", id: 409183694 # Keynote
 mas "iMovie", id: 408981434 # iMovie
 mas "Discovery - DNS-SD Browser", id: 1381004916 # Discovery - DNS-SD Browser 
-# mas "1Password", id: 443987910 # 1Password
-# mas "Slack", id: 803453959 # Slack
 # mas "Navicat Data Modeler Essentials", id: 532423082 # Navicat Data Modeler Essentials
 # mas "Free MP4 Converter", id: 693443591 # Free MP4 Converter
 # mas "Xcode", id: 497799835 # Xcode
