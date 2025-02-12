@@ -119,7 +119,7 @@ brew "packer" # Note: this formula is deprecated :/
 brew "terraform" # Note: Same :/
 
 # Install version managers.
-brew "asdf"
+brew "mise"
 
 # Install Ansible.
 brew "ansible"
@@ -146,7 +146,6 @@ cask "font-mona-sans"
 
 cask "1password"
 cask "adobe-acrobat-reader"
-cask "alacritty"
 cask "balenaetcher"
 cask "battle-net"
 cask "brave-browser"
@@ -180,6 +179,7 @@ cask "vlc"
 cask "vnc-viewer"
 cask "whatsapp"
 cask "winbox"
+cask "wireshark"
 cask "zoom"
 
 ## Mac App Store
