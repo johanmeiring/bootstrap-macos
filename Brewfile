@@ -8,12 +8,14 @@ brew "java"
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew "coreutils"
+#brew "coreutils"
 
 # Install some other useful utilities like `sponge`.
-brew "moreutils"
+#brew "moreutils"
+
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
-brew "findutils"
+#brew "findutils"
+
 # Install GNU `sed` (installed as `gsed`)
 brew "gnu-sed"
 
@@ -30,13 +32,6 @@ brew "screen"
 brew "perl"
 brew "python@3.12"
 brew "ruby"
-
-# Install font tools.
-brew "fontconfig"
-tap "bramstein/webfonttools"
-brew "sfnt2woff"
-brew "sfnt2woff-zopfli"
-brew "woff2"
 
 # Install other useful binaries.
 brew "ack"
@@ -67,15 +62,7 @@ tap "sass/sass"
 brew "sass/sass/sass"
 brew "ssh-copy-id"
 brew "speedtest-cli"
-brew "transmission-cli"
 brew "tree"
-
-# Install other useful misc libs.
-brew "libevent"
-brew "libyaml"
-brew "makedepend"
-brew "oniguruma"
-brew "pcre2"
 
 # Install tmux.
 brew "tmux"
@@ -83,9 +70,6 @@ brew "tmux-mem-cpu-load"
 
 # Install AWS tools.
 brew "awscli"
-brew "amazon-ecs-cli"
-brew "aws-elasticbeanstalk"
-tap "aws/tap"
 brew "aws-sam-cli"
 brew "aws-cdk"
 
@@ -136,13 +120,8 @@ brew "ponysay"
 ## Casks
 
 # Grab our favourite fonts first.
-tap "homebrew/cask-fonts"
-cask "font-hack"
-cask "font-hack-nerd-font"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font" # Use in case the above breaks.
-cask "font-hubot-sans"
-cask "font-mona-sans"
 
 cask "1password"
 cask "adobe-acrobat-reader"
