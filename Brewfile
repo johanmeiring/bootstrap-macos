@@ -125,6 +125,7 @@ cask "font-jetbrains-mono-nerd-font" # Use in case the above breaks.
 
 cask "1password"
 cask "adobe-acrobat-reader"
+cask "android-studio"
 cask "balenaetcher"
 cask "battle-net"
 cask "brave-browser"
@@ -161,7 +162,7 @@ cask "vlc"
 cask "vnc-viewer"
 cask "whatsapp"
 cask "winbox"
-cask "wireshark"
+#cask "wireshark-app"
 cask "zoom"
 
 ## Mac App Store
