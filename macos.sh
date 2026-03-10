@@ -8,11 +8,14 @@ osascript -e 'tell application "System Preferences" to quit'
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+  sudo -n true
+  sleep 60
+  kill -0 "$$" || exit
+done 2>/dev/null &
 
 # Install macOS command line tools
 xcode-select --install 2>/dev/null || echo "Command line tools are already installed."
-
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -63,17 +66,16 @@ sudo systemsetup -setrestartfreeze on
 
 # Hide and show certain menubar icons
 defaults -currentHost write dontAutoLoad -array \
-    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu"
+  "/System/Library/CoreServices/Menu Extras/TimeMachine.menu"
 #    "/System/Library/CoreServices/Menu Extras/User.menu"
 defaults write com.apple.systemuiserver menuExtras -array \
-    "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-    "/System/Library/CoreServices/Menu Extras/VPN.menu" \
-    "/System/Library/CoreServices/Menu Extras/Displays.menu" \
-    "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-    "/System/Library/CoreServices/Menu Extras/Battery.menu" \
-    "/System/Library/CoreServices/Menu Extras/Clock.menu" \
-    "/System/Library/CoreServices/Menu Extras/User.menu"
-
+  "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+  "/System/Library/CoreServices/Menu Extras/VPN.menu" \
+  "/System/Library/CoreServices/Menu Extras/Displays.menu" \
+  "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+  "/System/Library/CoreServices/Menu Extras/Battery.menu" \
+  "/System/Library/CoreServices/Menu Extras/Clock.menu" \
+  "/System/Library/CoreServices/Menu Extras/User.menu"
 
 ###############################################################################
 # Users & Groups                                                              #
@@ -120,7 +122,6 @@ sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Aut
 defaults write com.apple.BezelServices kDimTime -int 300
 sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Keyboard Dim Time" -int 300
 
-
 ###############################################################################
 # Screen & Displays                                                           #
 ###############################################################################
@@ -148,7 +149,6 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Enable subpixel font rendering on non-Apple LCDs
 # Reference: https://github.com/kevinSuttle/macOS-Defaults/issues/17#issuecomment-266633501
 #defaults write NSGlobalDomain AppleFontSmoothing -int 2
-
 
 ###############################################################################
 # Finder                                                                      #
@@ -290,7 +290,6 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 #defaults write com.apple.dock wvous-bl-corner -int 5
 #defaults write com.apple.dock wvous-bl-modifier -int 0
 
-
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
@@ -331,10 +330,10 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 #defaults write com.apple.Safari WebAutomaticSpellingCorrectionEnabled -bool false
 
 # Disable AutoFill
-#defaults write com.apple.Safari AutoFillFromAddressBook -bool false
-#defaults write com.apple.Safari AutoFillPasswords -bool false
-#defaults write com.apple.Safari AutoFillCreditCardData -bool false
-#defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
+defaults write com.apple.Safari AutoFillFromAddressBook -bool false
+defaults write com.apple.Safari AutoFillPasswords -bool false
+defaults write com.apple.Safari AutoFillCreditCardData -bool false
+defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
 
 # Warn about fraudulent websites
 defaults write com.apple.Safari WarnAboutFraudulentWebsites -bool true
@@ -349,7 +348,6 @@ defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 # Update extensions automatically
 defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 
-
 ###############################################################################
 # Mail                                                                        #
 ###############################################################################
@@ -357,14 +355,12 @@ defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
-
 ###############################################################################
 # Time Machine                                                                #
 ###############################################################################
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-
 
 ###############################################################################
 # Activity Monitor                                                            #
@@ -378,7 +374,6 @@ defaults write com.apple.ActivityMonitor IconType -int 5
 
 # Show all processes in Activity Monitor
 defaults write com.apple.ActivityMonitor ShowCategory -int 0
-
 
 ###############################################################################
 # Mac App Store                                                               #
@@ -403,14 +398,12 @@ sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartReq
 sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate ConfigDataInstall -bool false
 sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate CriticalUpdateInstall -bool false
 
-
 ###############################################################################
 # Photos                                                                      #
 ###############################################################################
 
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-
 
 ###############################################################################
 # Messages                                                                    #
@@ -425,7 +418,6 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 # Disable continuous spell checking
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
 
-
 ###############################################################################
 # Google Chrome                                                               #
 ###############################################################################
@@ -439,19 +431,18 @@ defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool 
 # Use the system print dialog
 #defaults write com.google.Chrome DisablePrintPreview -bool true
 
-
 ###############################################################################
 # Date & Time                                                                 #
 ###############################################################################
 
 # Set the timezone; see `systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "Africa/Johannesburg" > /dev/null
+sudo systemsetup -settimezone "Africa/Johannesburg" >/dev/null
 
 # Set date and time automatically
-sudo systemsetup -setusingnetworktime on > /dev/null
+sudo systemsetup -setusingnetworktime on >/dev/null
 
 # Set time server
-sudo systemsetup -setnetworktimeserver "time.apple.com" > /dev/null
+sudo systemsetup -setnetworktimeserver "time.apple.com" >/dev/null
 
 # Set time zome automatically using current location
 sudo defaults write /Library/Preferences/com.apple.timezone.auto.plist Active -bool true
@@ -463,16 +454,15 @@ sudo defaults write /Library/Preferences/com.apple.timezone.auto.plist Active -b
 # "ss"   Display the time with seconds
 defaults write com.apple.menuextra.clock DateFormat -string "EEE HH:mm"
 
-
 ###############################################################################
 # Kill/restart affected applications                                          #
 ###############################################################################
 
 for app in "Dock" \
-	"Finder" \
-	"cfprefsd" \
-	"Mail" \
-	"SystemUIServer"; do \
-	killall "${app}" &> /dev/null
+  "Finder" \
+  "cfprefsd" \
+  "Mail" \
+  "SystemUIServer"; do
+  killall "${app}" &>/dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
