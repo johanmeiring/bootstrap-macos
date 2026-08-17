@@ -91,6 +91,7 @@ brew "yarn"
 brew "typescript"
 
 # Install media tools.
+brew "bjarneo/cliamp/cliamp"
 brew "ffmpeg"
 brew "jasper"
 brew "jpegoptim"
@@ -111,6 +112,11 @@ brew "mise"
 brew "ansible"
 brew "ansible-lint"
 brew "ansible-language-server"
+
+# Install local LLM things
+#brew "ollama"
+tap anomalyco/tap
+brew "anomalyco/tap/opencode"
 
 # Install toys.
 #brew "cowsay"
@@ -151,6 +157,7 @@ cask "microsoft-edge"
 cask "microsoft-office"
 cask "musicbrainz-picard"
 cask "ngrok"
+cask "obsidian"
 cask "postman"
 cask "slack"
 cask "spotify"
